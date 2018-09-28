@@ -3,6 +3,7 @@ import Link from 'next/link'
 
 import PureComponent from '../components/PureComponent'
 import ExtendedComponent from '../components/ExtendedComponent'
+import ComponentWithHOC from '../components/ComponentWithHOC'
 import ComponentWithTrans from '../components/ComponentWithTrans'
 import { withI18next } from '../lib/withI18next'
 
@@ -12,6 +13,7 @@ const Page2 = ({ t }) => (
     <p>{t('common:integrates_react-i18next')}</p>
     <PureComponent t={t} />
     <ExtendedComponent />
+    <ComponentWithHOC />
     <ComponentWithTrans />
     <Link href='/'>
       <a>{t('link.gotoPage1')}</a>
